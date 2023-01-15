@@ -34,8 +34,8 @@ namespace OOPUkol7
         }
         public override string ToString()
         {
-          if(SplnujeTrvan())  return string.Format("{0} s cenou {1} s datumem výroby {2}\ns cenou s DPH {3} a splňuje min trvanlivost", nazev, cena, datumvyroby.ToShortDateString(), CenaSDPH());
-          else return string.Format("{0} s cenou {1} s datumem výroby\n{2} s cenou s DPH {3} a nesplňuje min trvanlivost", nazev, cena, datumvyroby.ToShortDateString(), CenaSDPH());
+          if(SplnujeTrvan())  return string.Format("{0} s cenou {1} s datumem výroby {2}\ns cenou s DPH\n{3} a splňuje min trvanlivost", nazev, cena, datumvyroby.ToShortDateString(), CenaSDPH());
+          else return string.Format("{0} s cenou {1} s datumem výroby\n{2} s cenou s DPH\n{3} a nesplňuje min trvanlivost", nazev, cena, datumvyroby.ToShortDateString(), CenaSDPH());
         }
     }
 }
